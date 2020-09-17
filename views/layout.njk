@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    {% block head %}{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/sobre">Sobre</a>
+      </div>
+      <div class="logo">
+        <div><img src="/assets/logo.png" alt=""></div>
+        <div>L'eau La Bouche</div>
+      </div>
+      <div class="links">
+        <a href="/frutos-do-mar">Frutos do Mar</a>
+        <a href="/carne-vermelha">Carne Vermelha</a>
+      </div>
+    </header>
+
+    {% block content %}
+      {% block footer %}{% endblock %}
+    {% endblock %}
+
+  </body>
+
+</html>
